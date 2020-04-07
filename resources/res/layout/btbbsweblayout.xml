@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/btfooterbar" android:background="@color/thrdcall_toolbar_visible" android:layout_width="match_parent" android:layout_height="@dimen/thrdcall_titlebar_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/left_back" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_left"/>
+            <ImageButton android:id="@+id/left_back_unclickable" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_left_unclickable"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/forward" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_right"/>
+            <ImageButton android:id="@+id/forward_Unclickable" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_right_unclickable"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/refresh" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_refresh"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/land_layout_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/openout" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_more"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_left"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageButton android:id="@+id/return_app" android:background="@drawable/com_tencent_msdk_webview_btn_bg" android:paddingLeft="@dimen/thrdcall_btn_margin" android:paddingRight="@dimen/thrdcall_btn_margin" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/com_tencent_msdk_webview_close"/>
+        </LinearLayout>
+    </LinearLayout>
+    <WebView android:id="@+id/btbbsview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btfooterbar"/>
+    <TextView android:gravity="center" android:id="@+id/bterrormsg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="請稍後再試" android:layout_above="@+id/btfooterbar" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+return
+{
+    language = "zh-cn",
+    packageName = "com.baitian.pjm.zwfz",
+    dataAppId = "100005",
+    statisticsNewbieMissionEventNiceplay = true,
+}

@@ -1,0 +1,47 @@
+-- @module ipconfig
+local config = { };
+
+local iOSCheck = require("version").iOSCheck;
+
+local kStaticResRoot = "http://ios.zwfz.100bt.com/mobile/";
+local kStaticResBackupRoot = "http://ios.zwfz-src.100bt.com/mobile/";
+
+if iOSCheck then
+    kStaticResRoot = kStaticResRoot .. "/iOSCheck/"
+    kStaticResBackupRoot = kStaticResBackupRoot .. "/iOSCheck/"
+else
+    local platform = cc.Application:getInstance():getTargetPlatform();
+    if platform == cc.PLATFORM_OS_IPAD or platform == cc.PLATFORM_OS_IPHONE then
+        kStaticResRoot = kStaticResRoot .. "/iOS/"
+        kStaticResBackupRoot = kStaticResBackupRoot .. "/iOS/"
+    else
+        kStaticResRoot = kStaticResRoot .. "/android/"
+        kStaticResBackupRoot = kStaticResBackupRoot .. "/android/"
+    end
+end 
+
+
+--local LOGIN_HTTP_ROOT = "http://service.ios.zwfz.100bt.com"; 
+--
+local LOGIN_HTTP_ROOT = "http://service.android.zwfz.100bt.com";  
+-- local LOGIN_HTTP_ROOT = "http://10.18.15.129";
+-- local LOGIN_HTTP_ROOT = "http://106.75.7.108";
+-- local LOGIN_HTTP_ROOT = "http://10.18.15.129";
+-- local LOGIN_HTTP_ROOT = "http://123.206.201.226";
+-- local LOGIN_HTTP_ROOT = "http://10.18.15.136:8888";
+-- local LOGIN_HTTP_ROOT = "http://10.17.1.101";
+-- local LOGIN_HTTP_ROOT = "http://service.zwfz.100bt.com";
+
+--- @field [parent=#ipconfig] #string LOGIN_LOAD_ZONE
+config.LOGIN_LOAD_ZONE = LOGIN_HTTP_ROOT .. "/loadzone.jsp";
+--- @field [parent=#ipconfig] #string LOGIN_LOAD_DEFAULT_ZONE
+config.LOGIN_LOAD_DEFAULT_ZONE = LOGIN_HTTP_ROOT .. "/login.jsp";
+--- @field [parent=#ipconfig] #string LOGIN_SIMULATE_PLATFRORM
+config.LOGIN_SIMULATE_PLATFRORM = LOGIN_HTTP_ROOT .. "/login0.jsp";
+
+config.kStaticResRoot = kStaticResRoot;
+config.kStaticResBackupRoot = kStaticResBackupRoot;
+
+config.DC_ROOT = "http://realtimedata.100bt.com"
+
+return config;

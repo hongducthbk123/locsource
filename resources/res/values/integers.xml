@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="abc_config_activityDefaultDur">220</integer>
+    <integer name="abc_config_activityShortDur">150</integer>
+    <integer name="btAppId">1000</integer>
+    <integer name="btDataAppId">100016</integer>
+    <integer name="btDataPlatformId">90</integer>
+    <integer name="btMiniChannelId">1</integer>
+    <integer name="btchannelId">800003</integer>
+    <integer name="btgameId">100013</integer>
+    <integer name="btoneId">100013112</integer>
+    <integer name="btplatformId">112</integer>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_tooltipAnimTime">150</integer>
+    <integer name="debugconfig">3</integer>
+    <integer name="google_play_services_version">12210000</integer>
+    <integer name="pay_packageid">800003</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>

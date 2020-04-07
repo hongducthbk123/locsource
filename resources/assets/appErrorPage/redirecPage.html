@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="format-detection" content="telephone=no,address=no">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Cache-Control" content="no-transform">
+		<link rel="stylesheet" type="text/css" href="./css/common.css">
+		<title class="title"></title>
+	</head>
+	<body>
+		<div class="content" style="display: none;">
+			<div class="icon"><svg   viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 1009.777778c-272.308148 0-493.037037-220.728889-493.037037-493.037037s220.728889-493.037037 493.037037-493.037037c272.270222 0 493.037037 220.728889 493.037037 493.037037s-220.766815 493.037037-493.037037 493.037037zM568.888889 284.444444a56.888889 56.888889 0 1 0-113.777778 0v265.481482a56.888889 56.888889 0 1 0 113.777778 0v-265.481482zM512 682.666667a56.888889 56.888889 0 1 0-0.037926 113.739852A56.888889 56.888889 0 0 0 512 682.666667z" fill="#ff5f6e" /></svg></div>
+			<div class="error_msg"></div>
+			<div class="btn redirec_btn_text"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./js/jquery-modernizr-require.min.js"></script>
+	<script type="text/javascript" src="./js/base.js"></script>
+	<script type="text/javascript">
+	~function (){
+		var gameLang = getUrlArg().gameLang;
+		var redirectUrl = getUrlArg().redirectUrl;
+		createJS(gameLang);
+		
+		$(".btn").on("click", function() {
+				window.location.href = redirectUrl;
+		})
+	}()
+	</script>
+</html>

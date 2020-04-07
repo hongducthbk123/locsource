@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="msdk_ad_btn_background">#fff9f9f9</drawable>
+    <drawable name="msdk_ad_transparent">#00000000</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_nor">#ffffffff</drawable>
+    <drawable name="ssdk_oks_classic_platfrom_cell_back_sel">#ffeeeeee</drawable>
+    <drawable name="thrdcall_delete_bg">#ff413e3e</drawable>
+    <drawable name="thrdcall_shareitems_bg">#ff393939</drawable>
+    <drawable name="thrdcall_sheet_cancel_btn_click">#ff5c5858</drawable>
+    <drawable name="thrdcall_sheet_cancel_btn_normal">#ff4c4949</drawable>
+    <drawable name="thrdcall_transparent">#00000000</drawable>
+    <drawable name="transparent">#00000000</drawable>
+</resources>

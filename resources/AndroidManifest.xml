@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="23" android:versionName="1.0.23" android:installLocation="auto" package="com.ubj.zwfzgp">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26"/>
+    <uses-feature android:glEsVersion="20000" android:required="false"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="org.cocos2dx.lua.MyApplication" android:debuggable="false" android:supportsRtl="true">
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="BUGLY_INVALID" android:value="true"/>
+        <meta-data android:name="BUGLY_APPID" android:value="{BUGLY_APPID}"/>
+        <meta-data android:name="BUGLY_APPKEY" android:value="{BUGLY_APPKEY}"/>
+        <meta-data android:name="BUGLY_APP_CHANNEL" android:value="baitian"/>
+        <meta-data android:name="BUGLY_ENABLE_DEBUG" android:value="{BUGLY_ENABLE_DEBUG}"/>
+        <service android:name="org.cocos2dx.extension.NetworkStateService"/>
+        <meta-data android:name="android.app.lib_name" android:value="cocos2dlua"/>
+        <activity android:theme="@style/ubFullScreenStyle" android:label="@string/app_name" android:name="org.cocos2dx.lua.AppActivity" android:launchMode="singleTop" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ubFullScreenStyle" android:name="com.btgame.onesdk.obb.OBBDownloaderActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.btgame.onesdk.obb.OBBDownloaderService"/>
+        <receiver android:name="com.btgame.onesdk.obb.OBBAlarmReceiver"/>
+        <service android:name="org.cocos2dx.extension.PollingService">
+            <intent-filter>
+                <action android:name="org.cocos2dx.extension.PollingService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="DownloadSource" android:value="GPF"/>
+        <meta-data android:name="sdkLogConfig" android:value="@bool/sdkLogConfig"/>
+        <meta-data android:name="sdkCodeConfig" android:value="@bool/sdkCodeConfig"/>
+        <meta-data android:name="btoneId" android:value="@integer/btoneId"/>
+        <meta-data android:name="btgameId" android:value="@integer/btgameId"/>
+        <meta-data android:name="btchannelId" android:value="@integer/btchannelId"/>
+        <meta-data android:name="btplatformId" android:value="@integer/btplatformId"/>
+        <meta-data android:name="debugconfig" android:value="@integer/debugconfig"/>
+        <meta-data android:name="btMiniChannelId" android:value="@integer/btMiniChannelId"/>
+        <meta-data android:name="btAppId" android:value="@integer/btAppId"/>
+        <meta-data android:name="btPayPlatform" android:value="@string/btPayPlatform"/>
+        <meta-data android:name="bt_event_listeners" android:value="@string/bt_event_listeners"/>
+        <meta-data android:name="bt_upload_data" android:value="true"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.EnableLogging" android:value="true"/>
+        <provider android:name="com.sensorsdata.analytics.android.sdk.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:authorities="com.ubj.zwfzgp.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.ubj.zwfzgp"/>
+        <meta-data android:name="btObbSwitch" android:value="false"/>
+        <meta-data android:name="btObbAutoSwitch" android:value="false"/>
+        <meta-data android:name="btObbVersion" android:value="18"/>
+        <meta-data android:name="btObbSize" android:value="X_324232413"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="bt_frame_sdk_version" android:value="1.1.99.1884"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.facebook.FacebookContentProvider" android:exported="true" android:authorities="@string/facebook_authorities"/>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/ubFullScreenStyle" android:name="com.btgame.seaui.p045ui.BtSeaLoginActivity" android:launchMode="singleTop" android:screenOrientation="sensorLandscape" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <receiver android:name="com.adjust.sdk.AdjustReferrerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:name="com.facebook.internal.FacebookInitProvider" android:exported="false" android:authorities="com.ubj.zwfzgp.FacebookInitProvider"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

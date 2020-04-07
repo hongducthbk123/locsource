@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@color/light_grey" android:layout_width="match_parent" android:layout_height="70dp">
+    <View android:id="@+id/view" android:background="@color/green_dark" android:visibility="invisible" android:layout_width="10dp" android:layout_height="match_parent"/>
+    <TextView android:textSize="18sp" android:textColor="@color/text_56" android:gravity="center" android:id="@+id/tvChannel" android:layout_width="match_parent" android:layout_height="match_parent" android:text="银行卡"/>
+</LinearLayout>

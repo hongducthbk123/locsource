@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="accountmanager_bt1_config">
+        <item>Email Binding</item>
+        <item>TAG_PAGE_BINDMAIL</item>
+        <item />
+        <item />
+    </array>
+    <array name="accountmanager_bt2_config">
+        <item>Find Password</item>
+        <item>TAG_PAGE_RETRIEVEPWD</item>
+        <item />
+        <item />
+    </array>
+    <array name="accountmanager_bt3_config">
+        <item>Change Password</item>
+        <item>TAG_PAGE_CHANGEPWD</item>
+        <item />
+        <item />
+    </array>
+    <array name="autologin_bt_config">
+        <item>Switch Account</item>
+        <item>BTN_CHANGEACCOUNT</item>
+        <item />
+        <item />
+    </array>
+    <array name="bindmail_bt_config">
+        <item>Confirm</item>
+        <item>BTN_BINDMAIL</item>
+        <item />
+        <item />
+    </array>
+    <array name="bindmail_bt_getcode_config">
+        <item>Verify code</item>
+        <item>BTN_GETMAILCODE</item>
+        <item />
+        <item />
+    </array>
+    <array name="btlogin_bt1_config">
+        <item>Login</item>
+        <item>BTN_BTLOGIN</item>
+        <item />
+        <item />
+    </array>
+    <array name="btlogin_bt2_config">
+        <item>Manage Account</item>
+        <item>TAG_PAGE_ACCOUNTMANAGER</item>
+        <item />
+        <item />
+    </array>
+    <array name="changepwd_bt_config">
+        <item>Confirm</item>
+        <item>BTN_CHANGEPWD</item>
+        <item />
+        <item />
+    </array>
+    <array name="ev_lv_events">
+        <item>lv3</item>
+        <item>ssgbht</item>
+        <item>lv5</item>
+        <item>jbesk3</item>
+        <item>lv8</item>
+        <item>jdfqhh</item>
+        <item>lv9</item>
+        <item>ojwoyw</item>
+        <item>lv15</item>
+        <item>1g22gp</item>
+        <item>lv22</item>
+        <item>tnldum</item>
+        <item>lv24</item>
+        <item>s8s18q</item>
+        <item>lv30</item>
+        <item>vtrh0l</item>
+    </array>
+    <array name="ev_n_days_login">
+        <item>next_day_login</item>
+        <item>3huacz</item>
+        <item>3_days_login</item>
+        <item>u5f2js</item>
+        <item>7_days_login</item>
+        <item>xdije7</item>
+    </array>
+    <array name="loginhome_bt1_config">
+        <item>Sign in with Google</item>
+        <item>TAG_THIRDLOGIN_GP</item>
+        <item>icon_gp</item>
+        <item>GOOGLE</item>
+    </array>
+    <array name="loginhome_bt2_config">
+        <item>Sign in with FaceBook</item>
+        <item>TAG_THIRDLOGIN_FB</item>
+        <item>icon_fb</item>
+        <item>FACEBOOK</item>
+    </array>
+    <array name="loginhome_bt3_config">
+        <item>Play Now</item>
+        <item>TAG_THIRDLOGIN_GUEST</item>
+        <item />
+        <item>VISITOR</item>
+    </array>
+    <array name="loginhome_bt4_config">
+        <item>Login</item>
+        <item>TAG_PAGE_LOGIN_BT</item>
+        <item />
+        <item>U_BEE_JOY</item>
+    </array>
+    <array name="loginhome_bt5_config">
+        <item>Sign up</item>
+        <item>TAG_PAGE_REGISTER</item>
+        <item />
+        <item>U_BEE_JOY</item>
+    </array>
+    <array name="notice_bt_config">
+        <item>Bind Account</item>
+        <item>BTN_NOTICE</item>
+        <item />
+        <item />
+    </array>
+    <array name="register_bt1_config">
+        <item>Sign up</item>
+        <item>BTN_REGISTER</item>
+        <item>icon_ub</item>
+        <item>U_BEE_JOY</item>
+    </array>
+    <array name="register_bt2_config">
+        <item>FB login</item>
+        <item>TAG_THIRDLOGIN_FB</item>
+        <item>icon_fb</item>
+        <item>FACEBOOK</item>
+    </array>
+    <array name="register_bt3_config">
+        <item>Google login</item>
+        <item>TAG_THIRDLOGIN_GP</item>
+        <item>icon_gp</item>
+        <item>GOOGLE</item>
+    </array>
+    <array name="retrievepwd_bt_config">
+        <item>Confirm</item>
+        <item>BTN_RETRIEVEPWD</item>
+        <item />
+        <item />
+    </array>
+</resources>

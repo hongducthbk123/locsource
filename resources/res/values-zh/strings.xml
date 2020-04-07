@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bt_exit_cancel_btn_text">取消</string>
+    <string name="bt_exit_comfirm_btn_text">确定</string>
+    <string name="bt_exit_msg">是否确定退出游戏？</string>
+    <string name="bt_exit_title">温馨提示:</string>
+    <string name="bt_permission_dialog_comfirm_text">确定</string>
+    <string name="bt_permission_dialog_msg">您尚未授予游戏所需必要的权限，请按下[设置]前往设定。为了良好的游戏体验，您需要完成设置才能進行游戏。</string>
+    <string name="bt_permission_dialog_second_msg">你必须同意授予必須的权限：\10 （%1$s），才能继续进行游戏</string>
+    <string name="bt_permission_dialog_title">权限请求确认</string>
+    <string name="bt_permission_explanation_file_msg">游戏内需要保存相关资料，需要该权限来获取保存与读取文件的能力</string>
+    <string name="bt_permission_explanation_file_title">启动文件权限</string>
+    <string name="bt_permission_explanation_msg">%1$s \10%2$s</string>
+    <string name="bt_permission_explanation_nextbtn_text">下一步</string>
+    <string name="bt_permission_explanation_phone_msg">游戏内需要获知电话的网络等状态，需要该权限来获取电话状态</string>
+    <string name="bt_permission_explanation_phone_title">启动电话状态权限</string>
+    <string name="bt_permission_explanation_title">设置权限说明</string>
+    <string name="bt_permission_leavegame_btn_text">离开游戏</string>
+    <string name="bt_permission_setting_btn_text">设置</string>
+    <string name="tips_notsupport_googlepay">您所在的地区不支持google钱包</string>
+</resources>

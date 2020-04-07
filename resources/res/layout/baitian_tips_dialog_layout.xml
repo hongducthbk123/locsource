@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/text_56" android:gravity="center" android:id="@+id/tvContent" android:background="@color/white" android:padding="12dp" android:layout_width="match_parent" android:layout_height="80dp" android:text="支付尚未完成，是否结束支付？"/>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="18sp" android:textColor="@color/text_56" android:gravity="center" android:id="@+id/tvConfirm" android:background="@drawable/normal_button_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="确认退出" android:layout_weight="1"/>
+        <View android:background="@color/divider" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="18sp" android:textColor="@color/text_56" android:gravity="center" android:id="@+id/tvCancel" android:background="@drawable/normal_button_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="继续支付" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
